@@ -64,21 +64,32 @@ After finishing your required elements, you can push your work further. These go
 - [ ] Make the Character component more complex and break it into several subcomponents.
 - [ ] Use the endpoint `[GET] https://swapi.dev/api/films` (mocked in msw) to obtain movie information to render with the characters.
 - [ ] Create a helper function in separate module to remove unneeded information from the API data, before putting it in state.
-- [ ] Create transitions or animations with styled-components.
+- [x] Create transitions or animations with styled-components.
 - [ ] Use Promise.all to resolve an array of promises.
 
 ## Submission format
 
-- [ ] Submit via Codegrade by committing and pushing any new changes to the main branch.
-- [ ] Check Codegrade for automated feedback.
-- [ ] Check Codegrade in the days following the Sprint Challenge for reviewer feedback.
-- [ ] Any changes pushed after the deadline will not receive any feedback.
+- [x] Submit via Codegrade by committing and pushing any new changes to the main branch.
+- [x] Check Codegrade for automated feedback.
+- [x] Check Codegrade in the days following the Sprint Challenge for reviewer feedback.
+- [x] Any changes pushed after the deadline will not receive any feedback.
 
 ## Interview Questions
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Put your answers underneath the questions:
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+
+- Facebook (now known as Meta) built the React JavaScript library. When your data changes, React makes it simple to construct interactive user interfaces, design simple views for each state in an application, and rapidly update and render just the right components.
+
 1. Describe component state.
+
+- A component's state is an object that contains information that may change over the component's lifespan. Components allow you to break down the user interface into separate, reusable parts and think about each one separately.
+
 1. Describe props.
+
+- In a nutshell, props are data passed from a parent element to a child. Props are read-only, thus whether a component is declared as a function or a class, it must never change its own props.
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+- Side effects are anything that has an impact on something outside of the scope of the currently running function.
