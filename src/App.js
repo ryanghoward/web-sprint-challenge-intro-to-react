@@ -7,7 +7,7 @@ import Character from './components/Character';
 const StyledHeader = styled.h1`
   font-size: 5em;
   color: #c0362c;
-  transition: transform .7s ease-in-out;
+  transition: transform .4s ease-in-out;
   &:hover {
     transform: scale(1.5);
   }
