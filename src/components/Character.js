@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const CharacterCard = styled.div`
+const CardStyles = styled.div`
     background-color: #2b3618;
     border: 1px solid lime;
     width: 50vw;
@@ -26,17 +26,17 @@ const Character = (props) => {
         <div>
             {characters.map((res, index) => {
                 return (
-                    <CharacterCard key={index}>
-                    <div>
-                        <StyledName>{res.name}</StyledName>
-                        <StyledH2>Gender: {res.gender}</StyledH2>
-                        <StyledH2>Birth Year: {res.birth_year}</StyledH2>
-                    </div>
-                    <div>
-                    {/* <StyledH2><a href={res.homeworld}>Home Planet</a></StyledH2> */}
-                    <button onClick={() => actionFilms(films)}>{res.homeworld}</button>
-                    </div>
-                    </CharacterCard>
+                    <CardStyles key={index}>
+                        <div>
+                            <StyledName>{res.name}</StyledName>
+                            <StyledH2>Gender: {res.gender}</StyledH2>
+                            <StyledH2>Birth Year: {res.birth_year}</StyledH2>
+                        </div>
+                        {/* <div>
+                        <StyledH2><a href={res.homeworld}>Home Planet</a></StyledH2>
+                        <button onClick={() => actionFilms(films)}>{res.homeworld}</button>
+                        </div> */}
+                    </CardStyles>
                 )
             })}
         </div>

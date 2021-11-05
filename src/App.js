@@ -6,6 +6,7 @@ import Character from './components/Character';
 
 const StyledHeader = styled.h1`
   font-size: 5em;
+  text-align: center;
   color: #c0362c;
 `
 
@@ -31,7 +32,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <StyledHeader className="Header">React Warz</StyledHeader>
+      <StyledHeader className="Header">R E A C T    W A R Z</StyledHeader>
       <Character className='Characters' characters={characterData} />
     </div>
   );
