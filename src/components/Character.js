@@ -21,7 +21,7 @@ const Character = (props) => {
 
     return (
         <div>
-            {characters.map((res.index) => {
+            {characters.map((res, index) => {
                 <CharacterCard key={index}>
                     <StyledName>{res.name}</StyledName>
                     <StyledH2>{res.gender}</StyledH2>
@@ -30,3 +30,5 @@ const Character = (props) => {
         </div>
     )
 }
+
+export default Character;
