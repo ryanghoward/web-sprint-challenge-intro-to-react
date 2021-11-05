@@ -12,10 +12,10 @@ const CardStyles = styled.div`
 const StyledName = styled.h1`
     color: white;
     font-size: 2em;
-    text-decoration: underline yellow;
+    text-decoration: underline #04d9ff;
     transition: transform .7s ease-in-out;
     &:hover {
-        transform: rotate(180deg);
+        transform: scale(1.7) rotate(180deg);
     }
 
 `
