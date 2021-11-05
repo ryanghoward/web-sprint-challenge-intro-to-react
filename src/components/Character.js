@@ -22,10 +22,12 @@ const Character = (props) => {
     return (
         <div>
             {characters.map((res, index) => {
-                <CharacterCard key={index}>
+                return (
+                    <CharacterCard key={index}>
                     <StyledName>{res.name}</StyledName>
                     <StyledH2>{res.gender}</StyledH2>
-                </CharacterCard>
+                    </CharacterCard>
+                )
             })}
         </div>
     )
