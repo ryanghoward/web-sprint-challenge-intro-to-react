@@ -15,8 +15,12 @@ const App = () => {
     axios.get('https://swapi.dev/api/people')
       .then(res => {
         console.log(res.data);
+        return setCharacterData(res.data);
       })
-  })
+      .catch(err => {
+        console.error(err);
+      })
+  }, [])
 
   return (
     <div className="App">
