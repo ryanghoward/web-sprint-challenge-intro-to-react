@@ -2,8 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 const CharacterCard = styled.div`
-    background-color: black;
-    border: 1px solid red;
+    background-color: #2b3618;
+    border: 1px solid lime;
+    width: 50vw;
+    opacity: 75%;
 `
 
 const StyledName = styled.h1`
