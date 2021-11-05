@@ -8,6 +8,10 @@ const StyledHeader = styled.h1`
   font-size: 5em;
   text-align: center;
   color: #c0362c;
+  transition: transform .7s ease-in-out;
+  &:hover {
+    transform: scale(1.5);
+  }
 `
 
 const App = () => {

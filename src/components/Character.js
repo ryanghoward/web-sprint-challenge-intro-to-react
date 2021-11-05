@@ -11,6 +11,13 @@ const CardStyles = styled.div`
 
 const StyledName = styled.h1`
     color: white;
+    font-size: 2em;
+    text-decoration: underline yellow;
+    transition: transform .7s ease-in-out;
+    &:hover {
+        transform: rotate(180deg);
+    }
+
 `
 
 const StyledH2 = styled.h2`
@@ -20,7 +27,7 @@ const StyledH2 = styled.h2`
 //~ Write your Character component here
 
 const Character = (props) => {
-    const { characters, films, actionFilms } = props;
+    const { characters } = props;
 
     return (
         <div>
@@ -32,10 +39,6 @@ const Character = (props) => {
                             <StyledH2>Gender: {res.gender}</StyledH2>
                             <StyledH2>Birth Year: {res.birth_year}</StyledH2>
                         </div>
-                        {/* <div>
-                        <StyledH2><a href={res.homeworld}>Home Planet</a></StyledH2>
-                        <button onClick={() => actionFilms(films)}>{res.homeworld}</button>
-                        </div> */}
                     </CardStyles>
                 )
             })}
